@@ -29,27 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.MoviesPanel = new System.Windows.Forms.FlowLayoutPanel();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.pictureBox9 = new System.Windows.Forms.PictureBox();
-			this.pictureBox10 = new System.Windows.Forms.PictureBox();
-			this.pictureBox11 = new System.Windows.Forms.PictureBox();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.pictureBox6 = new System.Windows.Forms.PictureBox();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label6 = new System.Windows.Forms.Label();
 			this.Filters = new System.Windows.Forms.GroupBox();
@@ -75,20 +54,6 @@
 			this.новизнаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.FilterLabel = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.label7 = new System.Windows.Forms.Label();
-			this.MoviesPanel.SuspendLayout();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.Filters.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -99,235 +64,10 @@
 			// 
 			this.MoviesPanel.AutoScroll = true;
 			this.MoviesPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
-			this.MoviesPanel.Controls.Add(this.groupBox1);
 			this.MoviesPanel.Location = new System.Drawing.Point(315, 30);
 			this.MoviesPanel.Name = "MoviesPanel";
 			this.MoviesPanel.Size = new System.Drawing.Size(945, 640);
 			this.MoviesPanel.TabIndex = 0;
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.pictureBox7);
-			this.groupBox1.Controls.Add(this.pictureBox8);
-			this.groupBox1.Controls.Add(this.pictureBox9);
-			this.groupBox1.Controls.Add(this.pictureBox10);
-			this.groupBox1.Controls.Add(this.pictureBox11);
-			this.groupBox1.Controls.Add(this.label12);
-			this.groupBox1.Controls.Add(this.label16);
-			this.groupBox1.Controls.Add(this.label15);
-			this.groupBox1.Controls.Add(this.label14);
-			this.groupBox1.Controls.Add(this.label13);
-			this.groupBox1.Controls.Add(this.label11);
-			this.groupBox1.Controls.Add(this.label10);
-			this.groupBox1.Controls.Add(this.label9);
-			this.groupBox1.Controls.Add(this.pictureBox6);
-			this.groupBox1.Controls.Add(this.pictureBox5);
-			this.groupBox1.Controls.Add(this.pictureBox4);
-			this.groupBox1.Controls.Add(this.pictureBox3);
-			this.groupBox1.Controls.Add(this.pictureBox2);
-			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.pictureBox1);
-			this.groupBox1.Location = new System.Drawing.Point(3, 3);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(912, 200);
-			this.groupBox1.TabIndex = 1;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox7.Location = new System.Drawing.Point(330, 55);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox7.TabIndex = 19;
-			this.pictureBox7.TabStop = false;
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox8.Location = new System.Drawing.Point(330, 55);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox8.TabIndex = 18;
-			this.pictureBox8.TabStop = false;
-			// 
-			// pictureBox9
-			// 
-			this.pictureBox9.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox9.Location = new System.Drawing.Point(310, 55);
-			this.pictureBox9.Name = "pictureBox9";
-			this.pictureBox9.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox9.TabIndex = 17;
-			this.pictureBox9.TabStop = false;
-			// 
-			// pictureBox10
-			// 
-			this.pictureBox10.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox10.Location = new System.Drawing.Point(290, 55);
-			this.pictureBox10.Name = "pictureBox10";
-			this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox10.TabIndex = 16;
-			this.pictureBox10.TabStop = false;
-			// 
-			// pictureBox11
-			// 
-			this.pictureBox11.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox11.Location = new System.Drawing.Point(270, 55);
-			this.pictureBox11.Name = "pictureBox11";
-			this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox11.TabIndex = 15;
-			this.pictureBox11.TabStop = false;
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(379, 120);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(127, 48);
-			this.label12.TabIndex = 10;
-			this.label12.Text = "Грали\r\n    Sylvester Stallone\r\n    Talia Shire";
-			// 
-			// label16
-			// 
-			this.label16.BackColor = System.Drawing.Color.Transparent;
-			this.label16.Location = new System.Drawing.Point(472, 55);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(434, 139);
-			this.label16.TabIndex = 14;
-			this.label16.Text = "A small-time boxer gets a supremely rare chance to fight a heavyweight champion i" +
-    "n a bout in which he strives to go the distance for his self-respect.";
-			this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Location = new System.Drawing.Point(167, 95);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(135, 16);
-			this.label15.TabIndex = 13;
-			this.label15.Text = "Довжина: 2 ч. 27 мін.";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(472, 32);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(106, 16);
-			this.label14.TabIndex = 12;
-			this.label14.Text = "Короткий зміст";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(327, 95);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(60, 16);
-			this.label13.TabIndex = 11;
-			this.label13.Text = "Рік: 2024";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(167, 145);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(64, 16);
-			this.label11.TabIndex = 9;
-			this.label11.Text = "Режисер";
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(167, 170);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(195, 16);
-			this.label10.TabIndex = 8;
-			this.label10.Text = "Студія: Pixar Animation Studios";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(165, 120);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(126, 16);
-			this.label9.TabIndex = 7;
-			this.label9.Text = "Жанр: Biographical";
-			this.label9.Click += new System.EventHandler(this.label9_Click);
-			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox6.Location = new System.Drawing.Point(250, 55);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox6.TabIndex = 6;
-			this.pictureBox6.TabStop = false;
-			// 
-			// pictureBox5
-			// 
-			this.pictureBox5.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox5.Location = new System.Drawing.Point(230, 55);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox5.TabIndex = 5;
-			this.pictureBox5.TabStop = false;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox4.Location = new System.Drawing.Point(210, 55);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox4.TabIndex = 4;
-			this.pictureBox4.TabStop = false;
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox3.Location = new System.Drawing.Point(190, 55);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox3.TabIndex = 3;
-			this.pictureBox3.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::Kurs.Properties.Resources.Star;
-			this.pictureBox2.Location = new System.Drawing.Point(170, 55);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(20, 20);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 2;
-			this.pictureBox2.TabStop = false;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label2.Location = new System.Drawing.Point(163, 22);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(190, 29);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Der Terminator";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::Kurs.Properties.Resources.Poster;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 7);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(156, 187);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
 			// 
 			// panel1
 			// 
@@ -577,7 +317,6 @@
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-			this.panel3.Controls.Add(this.label7);
 			this.panel3.Controls.Add(this.FilterLabel);
 			this.panel3.Controls.Add(this.menuStrip1);
 			this.panel3.Location = new System.Drawing.Point(315, 0);
@@ -585,15 +324,6 @@
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(945, 30);
 			this.panel3.TabIndex = 2;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(260, 0);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(44, 16);
-			this.label7.TabIndex = 12;
-			this.label7.Text = "label7";
 			// 
 			// Mainform
 			// 
@@ -609,20 +339,6 @@
 			this.ShowIcon = false;
 			this.Text = "Main Page";
 			this.Load += new System.EventHandler(this.Form1_Load);
-			this.MoviesPanel.ResumeLayout(false);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.Filters.ResumeLayout(false);
 			this.Filters.PerformLayout();
@@ -637,7 +353,6 @@
 		#endregion
 
 		private System.Windows.Forms.FlowLayoutPanel MoviesPanel;
-		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.GroupBox Filters;
@@ -663,27 +378,6 @@
 		private System.Windows.Forms.Label FilterLabel;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.ComboBox GenreComboBox;
-		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.PictureBox pictureBox6;
-		private System.Windows.Forms.PictureBox pictureBox5;
-		private System.Windows.Forms.PictureBox pictureBox4;
-		private System.Windows.Forms.PictureBox pictureBox3;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.PictureBox pictureBox7;
-		private System.Windows.Forms.PictureBox pictureBox8;
-		private System.Windows.Forms.PictureBox pictureBox9;
-		private System.Windows.Forms.PictureBox pictureBox10;
-		private System.Windows.Forms.PictureBox pictureBox11;
-		private System.Windows.Forms.Label label7;
 	}
 }
 

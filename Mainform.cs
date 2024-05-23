@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Kurs
 {
@@ -56,14 +57,15 @@ namespace Kurs
 				name: search_title,
 				genre: search_genre,
 				studio: search_studio,
-				director: search_director,
+			director: search_director,
 				actor: search_actor
 				);
+
+			MoviesPanel.Controls.Clear() ;
 			for (int movieIndex = 0; movieIndex < movies.Count; movieIndex++)
 			{
 
 				Movie movie = movies[movieIndex];
-				label7.Text += movie.ToString();
 
 				var poster = new PictureBox();
 				poster.Image = Properties.Resources.Poster;
@@ -71,6 +73,7 @@ namespace Kurs
 				poster.Size = new System.Drawing.Size(156, 187);
 				poster.SizeMode = PictureBoxSizeMode.Zoom;
 				poster.TabStop = false;
+				poster.Click += (s, ev) => OpenMovieDetails(movie);
 
 				var studiolabel = new Label();
 				studiolabel.AutoSize = true;
@@ -132,7 +135,7 @@ namespace Kurs
 				shortoverview.Text =movie.Synopsis;
 				shortoverview.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 
-				var groupBox = new GroupBox();
+				var groupBox = new System.Windows.Forms.GroupBox();
 				groupBox.SuspendLayout();
 
 				groupBox.Controls.Add(titlelabel);
@@ -165,6 +168,21 @@ namespace Kurs
 
 			}
 		}
+		private void OpenMovieDetails(Movie movie)
+		{
+			// Create an instance of the new form, passing the message to the constructor
+			Movieform newForm = new Movieform(movie);
+
+			// Hide the current form (this)
+			this.Hide();
+
+			// Show the new form
+			newForm.Show();
+
+			// Handle the FormClosed event of the new form
+			newForm.FormClosed += (s, args) => this.Show();
+		}
+
 
 		private void label9_Click(object sender, EventArgs e)
 		{
@@ -172,6 +190,11 @@ namespace Kurs
 		}
 
 		private void groupBox1_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox1_Click(object sender, EventArgs e)
 		{
 
 		}

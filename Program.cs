@@ -17,7 +17,8 @@ namespace Kurs
 			MovieDatabase.Load();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Movieform(MovieDatabase.GetMovie("The Dark Knight")));
+			Application.Run(new Mainform());
+			//Application.Run(new Movieform(MovieDatabase.GetMovie("The Dark Knight")));
 		}
 	}
 }
