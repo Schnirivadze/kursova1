@@ -43,11 +43,11 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.DownloadButton = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.OverviewLabel = new System.Windows.Forms.Label();
+			this.DownloadButton = new System.Windows.Forms.Button();
+			this.PosterBox = new System.Windows.Forms.PictureBox();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PosterBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// ActorsLabel
@@ -192,30 +192,6 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Короткий зміст";
 			// 
-			// DownloadButton
-			// 
-			this.DownloadButton.Location = new System.Drawing.Point(635, 600);
-			this.DownloadButton.Name = "DownloadButton";
-			this.DownloadButton.Size = new System.Drawing.Size(500, 39);
-			this.DownloadButton.TabIndex = 48;
-			this.DownloadButton.Text = "Пошук у базі данних";
-			this.DownloadButton.UseVisualStyleBackColor = true;
-			this.DownloadButton.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImage = global::Kurs.Properties.Resources.Poster;
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.pictureBox1.ErrorImage = null;
-			this.pictureBox1.InitialImage = null;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(500, 673);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			// 
 			// OverviewLabel
 			// 
 			this.OverviewLabel.BackColor = System.Drawing.Color.Transparent;
@@ -226,6 +202,30 @@
 			this.OverviewLabel.TabIndex = 33;
 			this.OverviewLabel.Text = resources.GetString("OverviewLabel.Text");
 			this.OverviewLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// DownloadButton
+			// 
+			this.DownloadButton.Location = new System.Drawing.Point(635, 600);
+			this.DownloadButton.Name = "DownloadButton";
+			this.DownloadButton.Size = new System.Drawing.Size(500, 39);
+			this.DownloadButton.TabIndex = 48;
+			this.DownloadButton.Text = "Пошук у базі данних";
+			this.DownloadButton.UseVisualStyleBackColor = true;
+			this.DownloadButton.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// PosterBox
+			// 
+			this.PosterBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.PosterBox.Dock = System.Windows.Forms.DockStyle.Left;
+			this.PosterBox.ErrorImage = null;
+			this.PosterBox.Image = global::Kurs.Properties.Resources.Poster;
+			this.PosterBox.InitialImage = null;
+			this.PosterBox.Location = new System.Drawing.Point(0, 0);
+			this.PosterBox.Name = "PosterBox";
+			this.PosterBox.Size = new System.Drawing.Size(500, 673);
+			this.PosterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.PosterBox.TabIndex = 0;
+			this.PosterBox.TabStop = false;
 			// 
 			// Movieform
 			// 
@@ -248,12 +248,12 @@
 			this.Controls.Add(this.StudioLabel);
 			this.Controls.Add(this.GenreLabel);
 			this.Controls.Add(this.TitleLabel);
-			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.PosterBox);
 			this.Name = "Movieform";
 			this.Text = "Movie";
 			this.Load += new System.EventHandler(this.Movieform_Load);
 			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PosterBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -261,7 +261,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox PosterBox;
 		private System.Windows.Forms.Label ActorsLabel;
 		private System.Windows.Forms.Label DurationLabel;
 		private System.Windows.Forms.Label YearLabel;

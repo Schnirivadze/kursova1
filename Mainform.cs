@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
@@ -68,7 +70,12 @@ namespace Kurs
 				Movie movie = movies[movieIndex];
 
 				var poster = new PictureBox();
-				poster.Image = Properties.Resources.Poster;
+				if (File.Exists($"./movies/{movie.Location}/poster.jpg"))
+				{
+					poster.Image = Image.FromFile($"./movies/{movie.Location}/poster.jpg");
+				}
+				else poster.Image = Properties.Resources.Poster;
+
 				poster.Location = new System.Drawing.Point(0, 7);
 				poster.Size = new System.Drawing.Size(156, 187);
 				poster.SizeMode = PictureBoxSizeMode.Zoom;

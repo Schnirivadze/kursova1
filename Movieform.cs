@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -47,6 +48,12 @@ namespace Kurs
 			DirectorLabel.Text = movie.Director;
 			StudioLabel.Text = movie.Studio;
 			ActorsLabel.Text = "";
+			if (File.Exists($"./movies/{movie.Location}/poster.jpg"))
+			{
+				PosterBox.Image = Image.FromFile($"./movies/{movie.Location}/poster.jpg");
+			}
+			else PosterBox.Image = Properties.Resources.Poster;
+
 			foreach (var actor in movie.MainActors)
 			{
 				ActorsLabel.Text += $"{actor}; ";
