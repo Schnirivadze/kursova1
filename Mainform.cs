@@ -162,10 +162,10 @@ namespace Kurs
 				groupBox.Controls.Add(shortoverview);
 				groupBox.Controls.Add(poster);
 				//stars
-				for (int starI = 0; starI < (int)movie.Rating; starI++)
+				for (int starI = 0; starI < 10; starI++)
 				{
 					var star = new PictureBox();
-					star.Image = Properties.Resources.Star;
+					star.Image = (starI < movie.Rating) ? Properties.Resources.checked_star : Properties.Resources.unchecked_star;
 					star.Location = new Point(170 + 20 * starI, 55);
 					star.Size = new Size(20, 20);
 					star.SizeMode = PictureBoxSizeMode.Zoom;
