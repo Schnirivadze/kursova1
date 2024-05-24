@@ -104,10 +104,10 @@ namespace Kurs
 				actorslabel.AutoSize = true;
 				actorslabel.Location = new Point(380, 120);
 				actorslabel.Size = new Size(130, 50);
-				actorslabel.Text = "Грали\n";
+				actorslabel.Text = "Грали";
 				foreach (var actor in movie.MainActors)
 				{
-					actorslabel.Text += $"\t{actor}";
+					actorslabel.Text += $"\n    {actor}";
 				}
 
 				var yearlabel = new Label();
