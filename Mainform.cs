@@ -86,7 +86,13 @@ namespace Kurs
 				poster.Size = new Size(156, 187);
 				poster.SizeMode = PictureBoxSizeMode.Zoom;
 				poster.TabStop = false;
-				poster.Click += (s, ev) => OpenMovieDetails(movie);
+				poster.Click += (s1, ev) =>
+				{
+					Movieform newForm = new Movieform(movie);
+					this.Hide();
+					newForm.Show();
+					newForm.FormClosed += (s2, args) => this.Show();
+				};
 
 				var studiolabel = new Label();
 				studiolabel.AutoSize = true;
@@ -178,8 +184,25 @@ namespace Kurs
 				groupBox.ResumeLayout(false);
 				groupBox.PerformLayout();
 				MoviesPanel.Controls.Add(groupBox);
-
+				
 			}
+			// 
+			// UploadButton
+			// 
+			Button UploadButton = new Button();
+			UploadButton.Location = new Point(3, 3);
+			UploadButton.Size = new Size(912, 40);
+			UploadButton.TabIndex = 0;
+			UploadButton.Text = "Завантажити фільм";
+			UploadButton.UseVisualStyleBackColor = true;
+			UploadButton.Click += (object s, EventArgs ev) => {
+				UploadForm newForm = new UploadForm();
+				this.Hide();
+				newForm.Show();
+				newForm.FormClosed += (s2, args) => this.Show();
+			};
+
+			MoviesPanel.Controls.Add(UploadButton);
 		}
 		private void Form1_Load(object sender, EventArgs e)
 		{
@@ -238,13 +261,6 @@ namespace Kurs
 			FilterMovies();
 			SortMovies();
 			FillMoviesPreviews();
-		}
-		private void OpenMovieDetails(Movie movie)
-		{
-			Movieform newForm = new Movieform(movie);
-			this.Hide();
-			newForm.Show();
-			newForm.FormClosed += (s, args) => this.Show();
 		}
 	}
 }

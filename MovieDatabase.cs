@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
+using File = System.IO.File;
 
 namespace Kurs
 {
@@ -60,8 +62,15 @@ namespace Kurs
 		static private string filePath = "movies.json";
 
 
-		static public void AddMovie(Movie movie)
+		static public void AddMovie(Movie movie, string movie_path, string poster_path)
 		{
+			int maxNumber = movies
+						.Select(film => int.Parse(film.Location.Substring(4)))
+						.Max();
+			movie.Location = $"Film{maxNumber}";
+			Directory.CreateDirectory($@"./movies/{movie.Location}");
+			File.Copy(movie_path, $@"./movies/{movie.Location}/film.mp4");
+			File.Copy(poster_path, $@"./movies/{movie.Location}/poster.jpg");
 			movies.Add(movie);
 			RemoveDuplicates();
 		}

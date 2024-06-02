@@ -54,6 +54,7 @@
 			this.новизнаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.FilterLabel = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.MoviesPanel.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.Filters.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -324,6 +325,7 @@
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(945, 30);
 			this.panel3.TabIndex = 2;
+			
 			// 
 			// Mainform
 			// 
@@ -339,6 +341,7 @@
 			this.ShowIcon = false;
 			this.Text = "Main Page";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.MoviesPanel.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.Filters.ResumeLayout(false);
 			this.Filters.PerformLayout();
