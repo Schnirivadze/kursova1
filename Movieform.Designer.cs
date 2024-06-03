@@ -129,7 +129,6 @@
 			this.label1.Size = new System.Drawing.Size(96, 27);
 			this.label1.TabIndex = 40;
 			this.label1.Text = "Довжина";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// label3
 			// 
@@ -211,7 +210,8 @@
 			this.DownloadButton.TabIndex = 48;
 			this.DownloadButton.Text = "Пошук у базі данних";
 			this.DownloadButton.UseVisualStyleBackColor = true;
-			this.DownloadButton.Click += new System.EventHandler(this.button1_Click);
+			this.DownloadButton.Click += new System.EventHandler(this.DownloadButton_Click);
+			this.DownloadButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// PosterBox
 			// 

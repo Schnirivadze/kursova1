@@ -160,8 +160,9 @@
 			this.DirectorTextBox.Location = new System.Drawing.Point(147, 263);
 			this.DirectorTextBox.Name = "DirectorTextBox";
 			this.DirectorTextBox.Size = new System.Drawing.Size(323, 27);
-			this.DirectorTextBox.TabIndex = 62;
+			this.DirectorTextBox.TabIndex = 6;
 			this.DirectorTextBox.Click += new System.EventHandler(this.DirectorTextBox_Click);
+			this.DirectorTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// StudioTextBox
 			// 
@@ -169,8 +170,9 @@
 			this.StudioTextBox.Location = new System.Drawing.Point(147, 303);
 			this.StudioTextBox.Name = "StudioTextBox";
 			this.StudioTextBox.Size = new System.Drawing.Size(323, 27);
-			this.StudioTextBox.TabIndex = 63;
+			this.StudioTextBox.TabIndex = 7;
 			this.StudioTextBox.Click += new System.EventHandler(this.StudioTextBox_Click);
+			this.StudioTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// DurationHours
 			// 
@@ -178,8 +180,9 @@
 			this.DurationHours.Location = new System.Drawing.Point(147, 143);
 			this.DurationHours.Name = "DurationHours";
 			this.DurationHours.Size = new System.Drawing.Size(120, 27);
-			this.DurationHours.TabIndex = 65;
+			this.DurationHours.TabIndex = 2;
 			this.DurationHours.Click += new System.EventHandler(this.DurationHours_Click);
+			this.DurationHours.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// YearTextBox
 			// 
@@ -197,12 +200,13 @@
             0});
 			this.YearTextBox.Name = "YearTextBox";
 			this.YearTextBox.Size = new System.Drawing.Size(120, 27);
-			this.YearTextBox.TabIndex = 66;
+			this.YearTextBox.TabIndex = 4;
 			this.YearTextBox.Value = new decimal(new int[] {
             1970,
             0,
             0,
             0});
+			this.YearTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// label9
 			// 
@@ -242,7 +246,7 @@
 			this.GenreComboBox.Location = new System.Drawing.Point(147, 222);
 			this.GenreComboBox.Name = "GenreComboBox";
 			this.GenreComboBox.Size = new System.Drawing.Size(323, 28);
-			this.GenreComboBox.TabIndex = 68;
+			this.GenreComboBox.TabIndex = 5;
 			this.GenreComboBox.Click += new System.EventHandler(this.GenreComboBox_Click);
 			// 
 			// TitleTextBox
@@ -253,19 +257,21 @@
 			this.TitleTextBox.Location = new System.Drawing.Point(10, 12);
 			this.TitleTextBox.Name = "TitleTextBox";
 			this.TitleTextBox.Size = new System.Drawing.Size(705, 49);
-			this.TitleTextBox.TabIndex = 72;
+			this.TitleTextBox.TabIndex = 1;
 			this.TitleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.TitleTextBox.Click += new System.EventHandler(this.TitleTextBox_Click);
+			this.TitleTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// UploadButton
 			// 
 			this.UploadButton.Location = new System.Drawing.Point(10, 621);
 			this.UploadButton.Name = "UploadButton";
 			this.UploadButton.Size = new System.Drawing.Size(705, 42);
-			this.UploadButton.TabIndex = 73;
+			this.UploadButton.TabIndex = 10;
 			this.UploadButton.Text = "Завантажити";
 			this.UploadButton.UseVisualStyleBackColor = true;
 			this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
+			this.UploadButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// ActorsRichTextBox
 			// 
@@ -274,9 +280,10 @@
 			this.ActorsRichTextBox.Name = "ActorsRichTextBox";
 			this.ActorsRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
 			this.ActorsRichTextBox.Size = new System.Drawing.Size(323, 99);
-			this.ActorsRichTextBox.TabIndex = 74;
+			this.ActorsRichTextBox.TabIndex = 8;
 			this.ActorsRichTextBox.Text = "";
 			this.ActorsRichTextBox.Click += new System.EventHandler(this.ActorsRichTextBox_Click);
+			this.ActorsRichTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// label10
 			// 
@@ -299,8 +306,9 @@
             0});
 			this.DurationMinutes.Name = "DurationMinutes";
 			this.DurationMinutes.Size = new System.Drawing.Size(120, 27);
-			this.DurationMinutes.TabIndex = 85;
+			this.DurationMinutes.TabIndex = 3;
 			this.DurationMinutes.Click += new System.EventHandler(this.DurationMinutes_Click);
+			this.DurationMinutes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// starBox10
 			// 
@@ -311,7 +319,6 @@
 			this.starBox10.Size = new System.Drawing.Size(35, 35);
 			this.starBox10.TabIndex = 84;
 			this.starBox10.TabStop = false;
-			this.starBox10.Click += new System.EventHandler(this.starBox10_Click);
 			// 
 			// starBox9
 			// 
@@ -322,7 +329,6 @@
 			this.starBox9.Size = new System.Drawing.Size(35, 35);
 			this.starBox9.TabIndex = 83;
 			this.starBox9.TabStop = false;
-			this.starBox9.Click += new System.EventHandler(this.starBox9_Click);
 			// 
 			// starBox8
 			// 
@@ -333,7 +339,6 @@
 			this.starBox8.Size = new System.Drawing.Size(35, 35);
 			this.starBox8.TabIndex = 82;
 			this.starBox8.TabStop = false;
-			this.starBox8.Click += new System.EventHandler(this.starBox8_Click);
 			// 
 			// starBox7
 			// 
@@ -344,7 +349,6 @@
 			this.starBox7.Size = new System.Drawing.Size(35, 35);
 			this.starBox7.TabIndex = 81;
 			this.starBox7.TabStop = false;
-			this.starBox7.Click += new System.EventHandler(this.starBox7_Click);
 			// 
 			// starBox6
 			// 
@@ -355,7 +359,6 @@
 			this.starBox6.Size = new System.Drawing.Size(35, 35);
 			this.starBox6.TabIndex = 80;
 			this.starBox6.TabStop = false;
-			this.starBox6.Click += new System.EventHandler(this.starBox6_Click);
 			// 
 			// starBox5
 			// 
@@ -366,7 +369,6 @@
 			this.starBox5.Size = new System.Drawing.Size(35, 35);
 			this.starBox5.TabIndex = 79;
 			this.starBox5.TabStop = false;
-			this.starBox5.Click += new System.EventHandler(this.starBox5_Click);
 			// 
 			// starBox4
 			// 
@@ -377,7 +379,6 @@
 			this.starBox4.Size = new System.Drawing.Size(35, 35);
 			this.starBox4.TabIndex = 78;
 			this.starBox4.TabStop = false;
-			this.starBox4.Click += new System.EventHandler(this.starBox4_Click);
 			// 
 			// starBox3
 			// 
@@ -388,7 +389,6 @@
 			this.starBox3.Size = new System.Drawing.Size(35, 35);
 			this.starBox3.TabIndex = 77;
 			this.starBox3.TabStop = false;
-			this.starBox3.Click += new System.EventHandler(this.starBox3_Click);
 			// 
 			// starBox2
 			// 
@@ -399,7 +399,6 @@
 			this.starBox2.Size = new System.Drawing.Size(35, 35);
 			this.starBox2.TabIndex = 76;
 			this.starBox2.TabStop = false;
-			this.starBox2.Click += new System.EventHandler(this.starBox2_Click);
 			// 
 			// starBox1
 			// 
@@ -410,7 +409,6 @@
 			this.starBox1.Size = new System.Drawing.Size(35, 35);
 			this.starBox1.TabIndex = 75;
 			this.starBox1.TabStop = false;
-			this.starBox1.Click += new System.EventHandler(this.starBox1_Click);
 			// 
 			// PosterDropArea
 			// 
@@ -457,9 +455,10 @@
 			this.OverviewRichTextBox.Name = "OverviewRichTextBox";
 			this.OverviewRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
 			this.OverviewRichTextBox.Size = new System.Drawing.Size(676, 133);
-			this.OverviewRichTextBox.TabIndex = 88;
+			this.OverviewRichTextBox.TabIndex = 9;
 			this.OverviewRichTextBox.Text = "";
 			this.OverviewRichTextBox.Click += new System.EventHandler(this.OverviewRichTextBox_Click);
+			this.OverviewRichTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// UploadForm
 			// 
@@ -503,6 +502,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "UploadForm";
 			this.Text = "UploadForm";
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			((System.ComponentModel.ISupportInitialize)(this.DurationHours)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.YearTextBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.DurationMinutes)).EndInit();

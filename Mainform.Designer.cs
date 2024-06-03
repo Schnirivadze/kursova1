@@ -39,7 +39,7 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.ActorTextBox = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.SearchButton = new System.Windows.Forms.Button();
 			this.TitleTextBox = new System.Windows.Forms.TextBox();
 			this.DirectorTextBox = new System.Windows.Forms.TextBox();
 			this.StudioTextBox = new System.Windows.Forms.TextBox();
@@ -52,9 +52,8 @@
 			this.розміромбільщіСпочаткуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.розміромменщіСпочаткуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.новизнаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.FilterLabel = new System.Windows.Forms.Label();
+			this.допомогаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.MoviesPanel.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.Filters.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -101,7 +100,7 @@
 			this.Filters.Controls.Add(this.label4);
 			this.Filters.Controls.Add(this.label5);
 			this.Filters.Controls.Add(this.ActorTextBox);
-			this.Filters.Controls.Add(this.button1);
+			this.Filters.Controls.Add(this.SearchButton);
 			this.Filters.Controls.Add(this.TitleTextBox);
 			this.Filters.Controls.Add(this.DirectorTextBox);
 			this.Filters.Controls.Add(this.StudioTextBox);
@@ -139,7 +138,8 @@
 			this.GenreComboBox.Location = new System.Drawing.Point(34, 180);
 			this.GenreComboBox.Name = "GenreComboBox";
 			this.GenreComboBox.Size = new System.Drawing.Size(203, 24);
-			this.GenreComboBox.TabIndex = 13;
+			this.GenreComboBox.TabIndex = 3;
+			this.GenreComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// label8
 			// 
@@ -192,17 +192,18 @@
 			this.ActorTextBox.Location = new System.Drawing.Point(34, 300);
 			this.ActorTextBox.Name = "ActorTextBox";
 			this.ActorTextBox.Size = new System.Drawing.Size(203, 23);
-			this.ActorTextBox.TabIndex = 11;
+			this.ActorTextBox.TabIndex = 5;
+			this.ActorTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
-			// button1
+			// SearchButton
 			// 
-			this.button1.Location = new System.Drawing.Point(63, 456);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(148, 28);
-			this.button1.TabIndex = 10;
-			this.button1.Text = "Шукати";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.SearchButton.Location = new System.Drawing.Point(63, 456);
+			this.SearchButton.Name = "SearchButton";
+			this.SearchButton.Size = new System.Drawing.Size(148, 28);
+			this.SearchButton.TabIndex = 6;
+			this.SearchButton.Text = "Шукати";
+			this.SearchButton.UseVisualStyleBackColor = true;
+			this.SearchButton.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// TitleTextBox
 			// 
@@ -210,7 +211,8 @@
 			this.TitleTextBox.Location = new System.Drawing.Point(34, 60);
 			this.TitleTextBox.Name = "TitleTextBox";
 			this.TitleTextBox.Size = new System.Drawing.Size(203, 23);
-			this.TitleTextBox.TabIndex = 9;
+			this.TitleTextBox.TabIndex = 1;
+			this.TitleTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// DirectorTextBox
 			// 
@@ -218,7 +220,8 @@
 			this.DirectorTextBox.Location = new System.Drawing.Point(34, 240);
 			this.DirectorTextBox.Name = "DirectorTextBox";
 			this.DirectorTextBox.Size = new System.Drawing.Size(203, 23);
-			this.DirectorTextBox.TabIndex = 5;
+			this.DirectorTextBox.TabIndex = 4;
+			this.DirectorTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// StudioTextBox
 			// 
@@ -226,7 +229,8 @@
 			this.StudioTextBox.Location = new System.Drawing.Point(34, 120);
 			this.StudioTextBox.Name = "StudioTextBox";
 			this.StudioTextBox.Size = new System.Drawing.Size(203, 23);
-			this.StudioTextBox.TabIndex = 1;
+			this.StudioTextBox.TabIndex = 2;
+			this.StudioTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// panel2
 			// 
@@ -242,7 +246,8 @@
 			// 
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сортуватиЗаToolStripMenuItem});
+            this.сортуватиЗаToolStripMenuItem,
+            this.допомогаToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(945, 28);
@@ -304,28 +309,22 @@
 			this.новизнаToolStripMenuItem.Text = "Новизна";
 			this.новизнаToolStripMenuItem.Click += new System.EventHandler(this.новизнаToolStripMenuItem_Click);
 			// 
-			// FilterLabel
+			// допомогаToolStripMenuItem
 			// 
-			this.FilterLabel.AutoSize = true;
-			this.FilterLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.FilterLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.FilterLabel.Location = new System.Drawing.Point(117, 4);
-			this.FilterLabel.Name = "FilterLabel";
-			this.FilterLabel.Size = new System.Drawing.Size(78, 20);
-			this.FilterLabel.TabIndex = 10;
-			this.FilterLabel.Text = "розміром";
+			this.допомогаToolStripMenuItem.Name = "допомогаToolStripMenuItem";
+			this.допомогаToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+			this.допомогаToolStripMenuItem.Text = "Допомога";
+			this.допомогаToolStripMenuItem.Click += new System.EventHandler(this.допомогаToolStripMenuItem_Click);
 			// 
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-			this.panel3.Controls.Add(this.FilterLabel);
 			this.panel3.Controls.Add(this.menuStrip1);
 			this.panel3.Location = new System.Drawing.Point(315, 0);
 			this.panel3.Margin = new System.Windows.Forms.Padding(0);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(945, 30);
 			this.panel3.TabIndex = 2;
-			
 			// 
 			// Mainform
 			// 
@@ -341,7 +340,7 @@
 			this.ShowIcon = false;
 			this.Text = "Main Page";
 			this.Load += new System.EventHandler(this.Form1_Load);
-			this.MoviesPanel.ResumeLayout(false);
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			this.panel1.ResumeLayout(false);
 			this.Filters.ResumeLayout(false);
 			this.Filters.PerformLayout();
@@ -367,7 +366,7 @@
 		private System.Windows.Forms.TextBox TitleTextBox;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button SearchButton;
 		private System.Windows.Forms.TextBox ActorTextBox;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.MenuStrip menuStrip1;
@@ -378,9 +377,9 @@
 		private System.Windows.Forms.ToolStripMenuItem розміромбільщіСпочаткуToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem розміромменщіСпочаткуToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem новизнаToolStripMenuItem;
-		private System.Windows.Forms.Label FilterLabel;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.ComboBox GenreComboBox;
+		private System.Windows.Forms.ToolStripMenuItem допомогаToolStripMenuItem;
 	}
 }
 

@@ -14,12 +14,8 @@ namespace Kurs
 			this.movie = movie;
 		}
 
-		private void label1_Click(object sender, EventArgs e)
-		{
 
-		}
-
-		private void button1_Click(object sender, EventArgs e)
+		private void DownloadButton_Click(object sender, EventArgs e)
 		{
 			if (File.Exists($"./movies/{movie.Location}/film.mp4"))
 			{
@@ -60,5 +56,11 @@ namespace Kurs
 			}
 			OverviewLabel.Text = movie.Synopsis;
 		}
+
+		private void KeyDownHandler(object sender, KeyEventArgs e)
+		{
+			MessageBox.Show("[F1] Допомога", "Eлементи керування", MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+
 	}
 }
