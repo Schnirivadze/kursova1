@@ -1,0 +1,15 @@
+C:\Projects\Kurs\obj\Debug\Kurs.csproj.AssemblyReference.cache
+C:\Projects\Kurs\obj\Debug\Kurs.Mainform.resources
+C:\Projects\Kurs\obj\Debug\Kurs.Properties.Resources.resources
+C:\Projects\Kurs\obj\Debug\Kurs.csproj.GenerateResource.cache
+C:\Projects\Kurs\obj\Debug\Kurs.csproj.CoreCompileInputs.cache
+C:\Projects\Kurs\bin\Debug\Kurs.exe.config
+C:\Projects\Kurs\bin\Debug\Kurs.exe
+C:\Projects\Kurs\bin\Debug\Kurs.pdb
+C:\Projects\Kurs\obj\Debug\Kurs.exe
+C:\Projects\Kurs\obj\Debug\Kurs.pdb
+C:\Projects\Kurs\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Kurs\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Kurs\obj\Debug\Kurs.csproj.CopyComplete
+C:\Projects\Kurs\obj\Debug\Kurs.Movieform.resources
+C:\Projects\Kurs\obj\Debug\Kurs.UploadForm.resources

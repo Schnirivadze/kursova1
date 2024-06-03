@@ -181,7 +181,6 @@ namespace Kurs
             else if (e.KeyCode == Keys.Enter) FilterSortFillMovies();
         }
 
-
         private void допомогаToolStripMenuItem_Click(object sender, EventArgs e) => ShowHelpWindow();
 
         private void ShowHelpWindow()

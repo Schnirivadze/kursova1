@@ -1,0 +1,658 @@
+[
+  {
+    "Title": "The Dark Knight",
+    "Studio": "Warner Bros",
+    "Genre": "Action",
+    "Year": 2008,
+    "Director": "Christopher Nolan",
+    "MainActors": [
+      "Christian Bale",
+      "Heath Ledger"
+    ],
+    "Synopsis": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham...",
+    "Rating": 7.0,
+    "Location": "Film1",
+    "Size": 2.5,
+    "Duration": 152.0
+  },
+  {
+    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Studio": "New Line Cinema",
+    "Genre": "Adventure",
+    "Year": 2001,
+    "Director": "Peter Jackson",
+    "MainActors": [
+      "Elijah Wood",
+      "Ian McKellen"
+    ],
+    "Synopsis": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron...",
+    "Rating": 8.8,
+    "Location": "Film9",
+    "Size": 3.5,
+    "Duration": 178.0
+  },
+  {
+    "Title": "Toy Story",
+    "Studio": "Pixar Animation Studios",
+    "Genre": "Animation",
+    "Year": 1995,
+    "Director": "John Lasseter",
+    "MainActors": [
+      "Tom Hanks",
+      "Tim Allen"
+    ],
+    "Synopsis": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room...",
+    "Rating": 8.3,
+    "Location": "Film17",
+    "Size": 1.8,
+    "Duration": 81.0
+  },
+  {
+    "Title": "The Shawshank Redemption",
+    "Studio": "Columbia Pictures",
+    "Genre": "Drama",
+    "Year": 1994,
+    "Director": "Frank Darabont",
+    "MainActors": [
+      "Tim Robbins",
+      "Morgan Freeman"
+    ],
+    "Synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency...",
+    "Rating": 9.3,
+    "Location": "Film4",
+    "Size": 2.1,
+    "Duration": 142.0
+  },
+  {
+    "Title": "The Shining",
+    "Studio": "Warner Bros",
+    "Genre": "Horror",
+    "Year": 1980,
+    "Director": "Stanley Kubrick",
+    "MainActors": [
+      "Jack Nicholson",
+      "Shelley Duvall"
+    ],
+    "Synopsis": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future...",
+    "Rating": 8.4,
+    "Location": "Film18",
+    "Size": 2.2,
+    "Duration": 146.0
+  },
+  {
+    "Title": "Interstellar",
+    "Studio": "Paramount",
+    "Genre": "Sci-Fi",
+    "Year": 2014,
+    "Director": "Christopher Nolan",
+    "MainActors": [
+      "Matthew McConaughey",
+      "Anne Hathaway"
+    ],
+    "Synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival...",
+    "Rating": 8.6,
+    "Location": "Film2",
+    "Size": 2.9,
+    "Duration": 169.0
+  },
+  {
+    "Title": "The Lord of the Rings: The Return of the King",
+    "Studio": "New Line Cinema",
+    "Genre": "Fantasy",
+    "Year": 2003,
+    "Director": "Peter Jackson",
+    "MainActors": [
+      "Elijah Wood",
+      "Viggo Mortensen"
+    ],
+    "Synopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring...",
+    "Rating": 8.9,
+    "Location": "Film9",
+    "Size": 3.6,
+    "Duration": 201.0
+  },
+  {
+    "Title": "Se7en",
+    "Studio": "New Line Cinema",
+    "Genre": "Thriller",
+    "Year": 1995,
+    "Director": "David Fincher",
+    "MainActors": [
+      "Morgan Freeman",
+      "Brad Pitt"
+    ],
+    "Synopsis": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives...",
+    "Rating": 8.6,
+    "Location": "Film19",
+    "Size": 2.3,
+    "Duration": 127.0
+  },
+  {
+    "Title": "Titanic",
+    "Studio": "20th Century Fox",
+    "Genre": "Romance",
+    "Year": 1997,
+    "Director": "James Cameron",
+    "MainActors": [
+      "Leonardo DiCaprio",
+      "Kate Winslet"
+    ],
+    "Synopsis": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic...",
+    "Rating": 7.8,
+    "Location": "Film16",
+    "Size": 3.5,
+    "Duration": 195.0
+  },
+  {
+    "Title": "Zootopia",
+    "Studio": "Walt Disney Pictures",
+    "Genre": "Family",
+    "Year": 2016,
+    "Director": "Byron Howard, Rich Moore, Jared Bush",
+    "MainActors": [
+      "Ginnifer Goodwin",
+      "Jason Bateman"
+    ],
+    "Synopsis": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy...",
+    "Rating": 8.0,
+    "Location": "Film20",
+    "Size": 2.0,
+    "Duration": 108.0
+  },
+  {
+    "Title": "The Usual Suspects",
+    "Studio": "PolyGram Filmed Entertainment",
+    "Genre": "Mystery",
+    "Year": 1995,
+    "Director": "Bryan Singer",
+    "MainActors": [
+      "Kevin Spacey",
+      "Gabriel Byrne"
+    ],
+    "Synopsis": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup...",
+    "Rating": 8.5,
+    "Location": "Film21",
+    "Size": 2.1,
+    "Duration": 106.0
+  },
+  {
+    "Title": "Catch Me If You Can",
+    "Studio": "DreamWorks Pictures",
+    "Genre": "Crime",
+    "Year": 2002,
+    "Director": "Steven Spielberg",
+    "MainActors": [
+      "Leonardo DiCaprio",
+      "Tom Hanks"
+    ],
+    "Synopsis": "A seasoned FBI agent pursues Frank Abagnale Jr. who, before his 19th birthday, successfully forged millions of dollars' worth of checks while posing as a Pan Am pilot, a doctor, and a legal prosecutor...",
+    "Rating": 8.1,
+    "Location": "Film22",
+    "Size": 2.3,
+    "Duration": 141.0
+  },
+  {
+    "Title": "The Lion King",
+    "Studio": "Walt Disney Pictures",
+    "Genre": "Family",
+    "Year": 1994,
+    "Director": "Roger Allers, Rob Minkoff",
+    "MainActors": [
+      "Matthew Broderick",
+      "Jeremy Irons"
+    ],
+    "Synopsis": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself...",
+    "Rating": 8.5,
+    "Location": "Film23",
+    "Size": 1.5,
+    "Duration": 88.0
+  },
+  {
+    "Title": "Bohemian Rhapsody",
+    "Studio": "20th Century Fox",
+    "Genre": "Musical",
+    "Year": 2018,
+    "Director": "Bryan Singer",
+    "MainActors": [
+      "Rami Malek",
+      "Lucy Boynton"
+    ],
+    "Synopsis": "The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985)...",
+    "Rating": 8.0,
+    "Location": "Film24",
+    "Size": 2.7,
+    "Duration": 134.0
+  },
+  {
+    "Title": "Schindler's List",
+    "Studio": "Universal Pictures",
+    "Genre": "Historical",
+    "Year": 1993,
+    "Director": "Steven Spielberg",
+    "MainActors": [
+      "Liam Neeson",
+      "Ralph Fiennes"
+    ],
+    "Synopsis": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis...",
+    "Rating": 8.9,
+    "Location": "Film13",
+    "Size": 3.2,
+    "Duration": 195.0
+  },
+  {
+    "Title": "War Horse",
+    "Studio": "DreamWorks Pictures",
+    "Genre": "War",
+    "Year": 2011,
+    "Director": "Steven Spielberg",
+    "MainActors": [
+      "Jeremy Irvine",
+      "Emily Watson"
+    ],
+    "Synopsis": "Young Albert enlists to serve in World War I after his beloved horse is sold to the cavalry. Albert's hopeful journey takes him out of England and to the front lines as the war rages on...",
+    "Rating": 7.2,
+    "Location": "Film25",
+    "Size": 2.8,
+    "Duration": 146.0
+  },
+  {
+    "Title": "Apollo 13",
+    "Studio": "Universal Pictures",
+    "Genre": "Documentary",
+    "Year": 1995,
+    "Director": "Ron Howard",
+    "MainActors": [
+      "Tom Hanks",
+      "Kevin Bacon"
+    ],
+    "Synopsis": "NASA must devise a strategy to return Apollo 13 to Earth safely after the spacecraft undergoes massive internal damage putting the lives of the three astronauts on board in jeopardy...",
+    "Rating": 7.6,
+    "Location": "Film26",
+    "Size": 2.4,
+    "Duration": 140.0
+  },
+  {
+    "Title": "The Social Network",
+    "Studio": "Columbia Pictures",
+    "Genre": "Biographical",
+    "Year": 2010,
+    "Director": "David Fincher",
+    "MainActors": [
+      "Jesse Eisenberg",
+      "Andrew Garfield"
+    ],
+    "Synopsis": "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business...",
+    "Rating": 7.7,
+    "Location": "Film27",
+    "Size": 2.5,
+    "Duration": 120.0
+  },
+  {
+    "Title": "Rush",
+    "Studio": "Universal Pictures",
+    "Genre": "Sport",
+    "Year": 2013,
+    "Director": "Ron Howard",
+    "MainActors": [
+      "Daniel Brühl",
+      "Chris Hemsworth"
+    ],
+    "Synopsis": "The merciless 1970s rivalry between Formula One rivals James Hunt and Niki Lauda...",
+    "Rating": 8.1,
+    "Location": "Film28",
+    "Size": 2.2,
+    "Duration": 123.0
+  },
+  {
+    "Title": "Shutter Island",
+    "Studio": "Paramount Pictures",
+    "Genre": "Mystery",
+    "Year": 2010,
+    "Director": "Martin Scorsese",
+    "MainActors": [
+      "Leonardo DiCaprio",
+      "Mark Ruffalo"
+    ],
+    "Synopsis": "In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane...",
+    "Rating": 8.2,
+    "Location": "Film30",
+    "Size": 2.6,
+    "Duration": 138.0
+  },
+  {
+    "Title": "The Notebook",
+    "Studio": "New Line Cinema",
+    "Genre": "Romance",
+    "Year": 2004,
+    "Director": "Nick Cassavetes",
+    "MainActors": [
+      "Ryan Gosling",
+      "Rachel McAdams"
+    ],
+    "Synopsis": "A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences...",
+    "Rating": 7.8,
+    "Location": "Film31",
+    "Size": 2.0,
+    "Duration": 123.0
+  },
+  {
+    "Title": "Psycho",
+    "Studio": "Paramount Pictures",
+    "Genre": "Horror",
+    "Year": 1960,
+    "Director": "Alfred Hitchcock",
+    "MainActors": [
+      "Anthony Perkins",
+      "Janet Leigh"
+    ],
+    "Synopsis": "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother...",
+    "Rating": 8.5,
+    "Location": "Film32",
+    "Size": 1.4,
+    "Duration": 109.0
+  },
+  {
+    "Title": "Mad Max: Fury Road",
+    "Studio": "Warner Bros",
+    "Genre": "Action",
+    "Year": 2015,
+    "Director": "George Miller",
+    "MainActors": [
+      "Tom Hardy",
+      "Charlize Theron"
+    ],
+    "Synopsis": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search of her homeland with the help of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
+    "Rating": 8.1,
+    "Location": "Film33",
+    "Size": 2.6,
+    "Duration": 120.0
+  },
+  {
+    "Title": "Jurassic Park",
+    "Studio": "Universal Pictures",
+    "Genre": "Adventure",
+    "Year": 1993,
+    "Director": "Steven Spielberg",
+    "MainActors": [
+      "Sam Neill",
+      "Laura Dern"
+    ],
+    "Synopsis": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+    "Rating": 8.1,
+    "Location": "Film34",
+    "Size": 2.5,
+    "Duration": 127.0
+  },
+  {
+    "Title": "The Grand Budapest Hotel",
+    "Studio": "Fox Searchlight Pictures",
+    "Genre": "Comedy",
+    "Year": 2014,
+    "Director": "Wes Anderson",
+    "MainActors": [
+      "Ralph Fiennes",
+      "F. Murray Abraham"
+    ],
+    "Synopsis": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.",
+    "Rating": 8.1,
+    "Location": "Film35",
+    "Size": 2.0,
+    "Duration": 99.0
+  },
+  {
+    "Title": "Forrest Gump",
+    "Studio": "Paramount Pictures",
+    "Genre": "Drama",
+    "Year": 1994,
+    "Director": "Robert Zemeckis",
+    "MainActors": [
+      "Tom Hanks",
+      "Robin Wright"
+    ],
+    "Synopsis": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+    "Rating": 8.8,
+    "Location": "Film36",
+    "Size": 2.3,
+    "Duration": 142.0
+  },
+  {
+    "Title": "Get Out",
+    "Studio": "Universal Pictures",
+    "Genre": "Horror",
+    "Year": 2017,
+    "Director": "Jordan Peele",
+    "MainActors": [
+      "Daniel Kaluuya",
+      "Allison Williams"
+    ],
+    "Synopsis": "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.",
+    "Rating": 7.7,
+    "Location": "Film37",
+    "Size": 2.4,
+    "Duration": 104.0
+  },
+  {
+    "Title": "Blade Runner 2049",
+    "Studio": "Warner Bros",
+    "Genre": "Sci-Fi",
+    "Year": 2017,
+    "Director": "Denis Villeneuve",
+    "MainActors": [
+      "Ryan Gosling",
+      "Harrison Ford"
+    ],
+    "Synopsis": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
+    "Rating": 8.0,
+    "Location": "Film38",
+    "Size": 2.8,
+    "Duration": 164.0
+  },
+  {
+    "Title": "Harry Potter and the Sorcerer's Stone",
+    "Studio": "Warner Bros",
+    "Genre": "Fantasy",
+    "Year": 2001,
+    "Director": "Chris Columbus",
+    "MainActors": [
+      "Daniel Radcliffe",
+      "Emma Watson"
+    ],
+    "Synopsis": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family, and the terrible evil that haunts the magical world.",
+    "Rating": 7.6,
+    "Location": "Film39",
+    "Size": 3.0,
+    "Duration": 152.0
+  },
+  {
+    "Title": "Gone Girl",
+    "Studio": "20th Century Fox",
+    "Genre": "Thriller",
+    "Year": 2014,
+    "Director": "David Fincher",
+    "MainActors": [
+      "Ben Affleck",
+      "Rosamund Pike"
+    ],
+    "Synopsis": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
+    "Rating": 8.1,
+    "Location": "Film40",
+    "Size": 2.7,
+    "Duration": 149.0
+  },
+  {
+    "Title": "La La Land",
+    "Studio": "Summit Entertainment",
+    "Genre": "Romance",
+    "Year": 2016,
+    "Director": "Damien Chazelle",
+    "MainActors": [
+      "Ryan Gosling",
+      "Emma Stone"
+    ],
+    "Synopsis": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
+    "Rating": 8.0,
+    "Location": "Film41",
+    "Size": 2.5,
+    "Duration": 128.0
+  },
+  {
+    "Title": "Finding Nemo",
+    "Studio": "Walt Disney Pictures",
+    "Genre": "Animation",
+    "Year": 2003,
+    "Director": "Andrew Stanton, Lee Unkrich",
+    "MainActors": [
+      "Albert Brooks",
+      "Ellen DeGeneres"
+    ],
+    "Synopsis": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+    "Rating": 8.1,
+    "Location": "Film42",
+    "Size": 1.9,
+    "Duration": 100.0
+  },
+  {
+    "Title": "The Prestige",
+    "Studio": "Touchstone Pictures",
+    "Genre": "Mystery",
+    "Year": 2006,
+    "Director": "Christopher Nolan",
+    "MainActors": [
+      "Christian Bale",
+      "Hugh Jackman"
+    ],
+    "Synopsis": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+    "Rating": 8.5,
+    "Location": "Film43",
+    "Size": 2.3,
+    "Duration": 130.0
+  },
+  {
+    "Title": "The Godfather",
+    "Studio": "Paramount Pictures",
+    "Genre": "Crime",
+    "Year": 1972,
+    "Director": "Francis Ford Coppola",
+    "MainActors": [
+      "Marlon Brando",
+      "Al Pacino"
+    ],
+    "Synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "Rating": 9.2,
+    "Location": "Film44",
+    "Size": 2.8,
+    "Duration": 175.0
+  },
+  {
+    "Title": "Harry Potter and the Philosopher's Stone",
+    "Studio": "Warner Bros",
+    "Genre": "Family",
+    "Year": 2001,
+    "Director": "Chris Columbus",
+    "MainActors": [
+      "Daniel Radcliffe",
+      "Emma Watson"
+    ],
+    "Synopsis": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family, and the terrible evil that haunts the magical world.",
+    "Rating": 7.6,
+    "Location": "Film45",
+    "Size": 3.0,
+    "Duration": 152.0
+  },
+  {
+    "Title": "Les Misérables",
+    "Studio": "Universal Pictures",
+    "Genre": "Musical",
+    "Year": 2012,
+    "Director": "Tom Hooper",
+    "MainActors": [
+      "Hugh Jackman",
+      "Russell Crowe"
+    ],
+    "Synopsis": "In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+    "Rating": 7.6,
+    "Location": "Film46",
+    "Size": 2.5,
+    "Duration": 158.0
+  },
+  {
+    "Title": "Braveheart",
+    "Studio": "Paramount Pictures",
+    "Genre": "Historical",
+    "Year": 1995,
+    "Director": "Mel Gibson",
+    "MainActors": [
+      "Mel Gibson",
+      "Sophie Marceau"
+    ],
+    "Synopsis": "When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.",
+    "Rating": 8.3,
+    "Location": "Film47",
+    "Size": 3.2,
+    "Duration": 178.0
+  },
+  {
+    "Title": "Saving Private Ryan",
+    "Studio": "Paramount Pictures",
+    "Genre": "War",
+    "Year": 1998,
+    "Director": "Steven Spielberg",
+    "MainActors": [
+      "Tom Hanks",
+      "Matt Damon"
+    ],
+    "Synopsis": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+    "Rating": 8.6,
+    "Location": "Film48",
+    "Size": 3.5,
+    "Duration": 169.0
+  },
+  {
+    "Title": "March of the Penguins",
+    "Studio": "Warner Independent Pictures",
+    "Genre": "Documentary",
+    "Year": 2005,
+    "Director": "Luc Jacquet",
+    "MainActors": [
+      "Morgan Freeman",
+      "Charles Berling"
+    ],
+    "Synopsis": "In the Antarctic, every March since the beginning of time, the quest begins to find the perfect mate and start a family.",
+    "Rating": 7.5,
+    "Location": "Film49",
+    "Size": 2.1,
+    "Duration": 80.0
+  },
+  {
+    "Title": "The King's Speech",
+    "Studio": "The Weinstein Company",
+    "Genre": "Biographical",
+    "Year": 2010,
+    "Director": "Tom Hooper",
+    "MainActors": [
+      "Colin Firth",
+      "Geoffrey Rush"
+    ],
+    "Synopsis": "The story of King George VI, his impromptu ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.",
+    "Rating": 8.0,
+    "Location": "Film50",
+    "Size": 2.4,
+    "Duration": 118.0
+  },
+  {
+    "Title": "Rocky",
+    "Studio": "United Artists",
+    "Genre": "Sport",
+    "Year": 1976,
+    "Director": "John G. Avildsen",
+    "MainActors": [
+      "Sylvester Stallone",
+      "Talia Shire"
+    ],
+    "Synopsis": "A small-time boxer gets a supremely rare chance to fight a heavyweight champion in a bout in which he strives to go the distance for his self-respect.",
+    "Rating": 8.1,
+    "Location": "Film51",
+    "Size": 1.8,
+    "Duration": 120.0
+  },
+]
