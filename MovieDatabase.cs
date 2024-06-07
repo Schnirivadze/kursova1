@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
 using File = System.IO.File;
 
 namespace Kurs
@@ -22,26 +21,23 @@ namespace Kurs
 		public string Location { get; set; }
 		public double Size { get; set; } // GB
 		public double Duration { get; set; } // minutes
+
 		public override string ToString()
 		{
 			return $"{Title}({Genre}) by {Studio} in {Year} directed by {Director}";
 		}
+
 		public void Download()
 		{
 			using (SaveFileDialog saveFileDialog = new SaveFileDialog())
 			{
-				saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-				saveFileDialog.Title = "Save a Text File";
+				saveFileDialog.Filter = "MP4 files (*.mp4)|*.mp4|All files (*.*)|*.*";
+				saveFileDialog.Title = "Save an MP4 File";
 
-				// Show the SaveFileDialog and check if the user clicked the save button
 				if (saveFileDialog.ShowDialog() == DialogResult.OK)
 				{
-					// Get the file path selected by the user
 					string filePath = saveFileDialog.FileName;
 
-					// Write content to the file
-
-					// Save the content to the file
 					try
 					{
 						File.Copy($"./movies/{Location}/film.mp4", filePath);
@@ -58,16 +54,15 @@ namespace Kurs
 
 	public class MovieDatabase
 	{
-		static private List<Movie> movies;
-		static private string filePath = "movies.json";
-
+		private static List<Movie> movies;
+		private static string filePath = "movies.json";
 
 		static public void AddMovie(Movie movie, string movie_path, string poster_path)
 		{
 			int maxNumber = movies
-						.Select(film => int.Parse(film.Location.Substring(4)))
-						.Max();
-			movie.Location = $"Film{maxNumber}";
+				.Select(film => int.Parse(film.Location.Substring(4)))
+				.Max();
+			movie.Location = $"Film{maxNumber + 1}";
 			Directory.CreateDirectory($@"./movies/{movie.Location}");
 			File.Copy(movie_path, $@"./movies/{movie.Location}/film.mp4");
 			File.Copy(poster_path, $@"./movies/{movie.Location}/poster.jpg");
@@ -117,7 +112,6 @@ namespace Kurs
 			).ToList();
 		}
 
-
 		static public List<Movie> GetMoviesBySize(double maxSize)
 		{
 			return movies.Where(m => m.Size <= maxSize).ToList();
@@ -139,12 +133,6 @@ namespace Kurs
 			{
 				var json = File.ReadAllText(filePath);
 				movies = JsonConvert.DeserializeObject<List<Movie>>(json) ?? new List<Movie>();
-				string moviesstr = "";
-				foreach (var movie in movies)
-				{
-					moviesstr += movie.ToString() + "\n";
-				}
-				File.WriteAllText("log.txt", moviesstr);
 			}
 			else
 			{
@@ -157,6 +145,7 @@ namespace Kurs
 			var json = JsonConvert.SerializeObject(movies, Formatting.Indented);
 			File.WriteAllText(filePath, json);
 		}
+
 		static public void RemoveDuplicates()
 		{
 			movies = movies.GroupBy(m => m.Title, StringComparer.OrdinalIgnoreCase)

@@ -1,25 +1,13 @@
 ﻿namespace Kurs
 {
-	partial class Mainform
+	partial class MainForm
 	{
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
+#pragma warning disable CS0414
 		private System.ComponentModel.IContainer components = null;
-
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
-
+#pragma warning restore CS0414
 		#region Windows Form Designer generated code
 
 		/// <summary>
@@ -116,25 +104,25 @@
 			// 
 			this.GenreComboBox.FormattingEnabled = true;
 			this.GenreComboBox.Items.AddRange(new object[] {
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Drama",
-            "Horror",
-            "Science Fiction (Sci-Fi)",
-            "Fantasy",
-            "Thriller",
-            "Romance",
-            "Animation",
-            "Mystery",
-            "Crime",
-            "Family",
-            "Musical",
-            "Historical",
-            "War",
-            "Documentary",
-            "Biographical",
-            "Sport"});
+			"Action",
+			"Adventure",
+			"Comedy",
+			"Drama",
+			"Horror",
+			"Science Fiction (Sci-Fi)",
+			"Fantasy",
+			"Thriller",
+			"Romance",
+			"Animation",
+			"Mystery",
+			"Crime",
+			"Family",
+			"Musical",
+			"Historical",
+			"War",
+			"Documentary",
+			"Biographical",
+			"Sport"});
 			this.GenreComboBox.Location = new System.Drawing.Point(34, 180);
 			this.GenreComboBox.Name = "GenreComboBox";
 			this.GenreComboBox.Size = new System.Drawing.Size(203, 24);
@@ -203,7 +191,7 @@
 			this.SearchButton.TabIndex = 6;
 			this.SearchButton.Text = "Шукати";
 			this.SearchButton.UseVisualStyleBackColor = true;
-			this.SearchButton.Click += new System.EventHandler(this.button1_Click);
+			this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
 			// 
 			// TitleTextBox
 			// 
@@ -246,8 +234,8 @@
 			// 
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сортуватиЗаToolStripMenuItem,
-            this.допомогаToolStripMenuItem});
+			this.сортуватиЗаToolStripMenuItem,
+			this.допомогаToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(945, 28);
@@ -257,12 +245,12 @@
 			// сортуватиЗаToolStripMenuItem
 			// 
 			this.сортуватиЗаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.аЯToolStripMenuItem,
-            this.аЯToolStripMenuItem1,
-            this.оцінкоюToolStripMenuItem,
-            this.розміромбільщіСпочаткуToolStripMenuItem,
-            this.розміромменщіСпочаткуToolStripMenuItem,
-            this.новизнаToolStripMenuItem});
+			this.аЯToolStripMenuItem,
+			this.аЯToolStripMenuItem1,
+			this.оцінкоюToolStripMenuItem,
+			this.розміромбільщіСпочаткуToolStripMenuItem,
+			this.розміромменщіСпочаткуToolStripMenuItem,
+			this.новизнаToolStripMenuItem});
 			this.сортуватиЗаToolStripMenuItem.Name = "сортуватиЗаToolStripMenuItem";
 			this.сортуватиЗаToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
 			this.сортуватиЗаToolStripMenuItem.Text = "Сортувати за";
@@ -339,7 +327,7 @@
 			this.Name = "Mainform";
 			this.ShowIcon = false;
 			this.Text = "Main Page";
-			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			this.panel1.ResumeLayout(false);
 			this.Filters.ResumeLayout(false);

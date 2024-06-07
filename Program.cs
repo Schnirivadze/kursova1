@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kurs
@@ -17,7 +14,7 @@ namespace Kurs
 			MovieDatabase.Load();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Mainform());
+			Application.Run(new MainForm());
 		}
 	}
 }

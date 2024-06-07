@@ -113,32 +113,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="1716313431827.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\movies\Default\Poster.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Star.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="unchecked_star.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="checked_star.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\upload_48dp_FILL0_wght400_GRAD0_opsz48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\movie_48dp_FILL0_wght400_GRAD0_opsz48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\check_circle_48dp_FILL0_wght400_GRAD0_opsz48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_48dp_FILL0_wght400_GRAD0_opsz48.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

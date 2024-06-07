@@ -638,21 +638,5 @@
     "Location": "Film50",
     "Size": 2.4,
     "Duration": 118.0
-  },
-  {
-    "Title": "Rocky",
-    "Studio": "United Artists",
-    "Genre": "Sport",
-    "Year": 1976,
-    "Director": "John G. Avildsen",
-    "MainActors": [
-      "Sylvester Stallone",
-      "Talia Shire"
-    ],
-    "Synopsis": "A small-time boxer gets a supremely rare chance to fight a heavyweight champion in a bout in which he strives to go the distance for his self-respect.",
-    "Rating": 8.1,
-    "Location": "Film51",
-    "Size": 1.8,
-    "Duration": 120.0
-  },
+  }
 ]

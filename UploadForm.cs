@@ -8,34 +8,35 @@ namespace Kurs
 {
 	public partial class UploadForm : Form
 	{
-		Movie new_movie;
-		string movie_path = "";
-		string poster_path = "";
+		private Movie newMovie;
+		private string moviePath = string.Empty;
+		private string posterPath = string.Empty;
 
 		public UploadForm()
 		{
 			InitializeComponent();
-			new_movie = new Movie();
+			newMovie = new Movie();
 			InitializeStarClickEvents();
+			AttachClearBackColorEventHandler();
+			this.KeyDown += KeyDownHandler;
 		}
 
 		private void InitializeStarClickEvents()
 		{
-			starBox1.Click += (sender, e) => SetRating(1);
-			starBox2.Click += (sender, e) => SetRating(2);
-			starBox3.Click += (sender, e) => SetRating(3);
-			starBox4.Click += (sender, e) => SetRating(4);
-			starBox5.Click += (sender, e) => SetRating(5);
-			starBox6.Click += (sender, e) => SetRating(6);
-			starBox7.Click += (sender, e) => SetRating(7);
-			starBox8.Click += (sender, e) => SetRating(8);
-			starBox9.Click += (sender, e) => SetRating(9);
-			starBox10.Click += (sender, e) => SetRating(10);
+			for (int i = 1; i <= 10; i++)
+			{
+				var starBox = Controls.Find($"starBox{i}", true).FirstOrDefault() as PictureBox;
+				if (starBox != null)
+				{
+					int rating = i;
+					starBox.Click += (sender, e) => SetRating(rating);
+				}
+			}
 		}
 
 		private void SetRating(int rating)
 		{
-			new_movie.Rating = rating;
+			newMovie.Rating = rating;
 			for (int i = 1; i <= 10; i++)
 			{
 				var starBox = Controls.Find($"starBox{i}", true).FirstOrDefault() as PictureBox;
@@ -56,12 +57,12 @@ namespace Kurs
 
 		private void MovieDropArea_DragDrop(object sender, DragEventArgs e)
 		{
-			HandleFileDrop(e, ".mp4", ref movie_path, MovieDropArea);
+			HandleFileDrop(e, ".mp4", ref moviePath, MovieDropArea);
 		}
 
 		private void PosterDropArea_DragDrop(object sender, DragEventArgs e)
 		{
-			HandleFileDrop(e, ".jpg", ref poster_path, PosterDropArea);
+			HandleFileDrop(e, ".jpg", ref posterPath, PosterDropArea);
 		}
 
 		private void HandleFileDrop(DragEventArgs e, string expectedExtension, ref string filePath, Panel dropArea)
@@ -87,48 +88,57 @@ namespace Kurs
 		private bool ValidateForm()
 		{
 			var messages = new List<string>();
+
 			if (string.IsNullOrWhiteSpace(TitleTextBox.Text))
 			{
 				messages.Add("Заповніть назву фільму");
 				TitleTextBox.BackColor = Color.Red;
 			}
+
 			if (GetDuration() == 0)
 			{
 				messages.Add("Заповніть довжину фільму");
 				DurationHours.BackColor = Color.Red;
 				DurationMinutes.BackColor = Color.Red;
 			}
+
 			if (string.IsNullOrWhiteSpace(GenreComboBox.Text))
 			{
 				messages.Add("Заповніть жанр фільму");
 				GenreComboBox.BackColor = Color.Red;
 			}
+
 			if (string.IsNullOrWhiteSpace(StudioTextBox.Text))
 			{
 				messages.Add("Заповніть студію фільму");
 				StudioTextBox.BackColor = Color.Red;
 			}
+
 			if (string.IsNullOrWhiteSpace(DirectorTextBox.Text))
 			{
 				messages.Add("Заповніть режисера фільму");
 				DirectorTextBox.BackColor = Color.Red;
 			}
+
 			if (string.IsNullOrWhiteSpace(ActorsRichTextBox.Text))
 			{
 				messages.Add("Заповніть акторів фільму");
 				ActorsRichTextBox.BackColor = Color.Red;
 			}
+
 			if (string.IsNullOrWhiteSpace(OverviewRichTextBox.Text))
 			{
 				messages.Add("Заповніть зміст фільму");
 				OverviewRichTextBox.BackColor = Color.Red;
 			}
-			if (string.IsNullOrWhiteSpace(movie_path))
+
+			if (string.IsNullOrWhiteSpace(moviePath))
 			{
 				messages.Add("Завантажте фільм");
 				MovieDropArea.BackColor = Color.Red;
 			}
-			if (string.IsNullOrWhiteSpace(poster_path))
+
+			if (string.IsNullOrWhiteSpace(posterPath))
 			{
 				messages.Add("Завантажте постер");
 				PosterDropArea.BackColor = Color.Red;
@@ -147,21 +157,24 @@ namespace Kurs
 		{
 			if (ValidateForm())
 			{
-				List<string> actors = new List<string>(ActorsRichTextBox.Text.Split('\n'));
-				new_movie.Title = TitleTextBox.Text;
-				new_movie.Duration = GetDuration();
-				new_movie.Year = (int)YearTextBox.Value;
-				new_movie.Genre = GenreComboBox.Text;
-				new_movie.Director = DirectorTextBox.Text;
-				new_movie.Studio = StudioTextBox.Text;
-				new_movie.MainActors = actors;
-				new_movie.Synopsis = OverviewRichTextBox.Text;
+				newMovie = new Movie
+				{
+					Title = TitleTextBox.Text,
+					Duration = GetDuration(),
+					Year = (int)YearTextBox.Value,
+					Genre = GenreComboBox.Text,
+					Director = DirectorTextBox.Text,
+					Studio = StudioTextBox.Text,
+					MainActors = ActorsRichTextBox.Text.Split('\n').ToList(),
+					Synopsis = OverviewRichTextBox.Text,
+					Rating = newMovie.Rating
+				};
 
 				try
 				{
 					UploadButton.Text = "Завантажується";
 					UploadButton.Enabled = false;
-					MovieDatabase.AddMovie(new_movie, movie_path, poster_path);
+					MovieDatabase.AddMovie(newMovie, moviePath, posterPath);
 					MessageBox.Show("Фільм завантажено", "Успіх", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.Close();
 				}
@@ -174,23 +187,54 @@ namespace Kurs
 			}
 		}
 
-		private void DurationHours_Click(object sender, EventArgs e) => DurationHours.BackColor = Color.White;
-		private void DurationMinutes_Click(object sender, EventArgs e) => DurationMinutes.BackColor = Color.White;
-		private void TitleTextBox_Click(object sender, EventArgs e) => TitleTextBox.BackColor = Color.White;
-		private void GenreComboBox_Click(object sender, EventArgs e) => GenreComboBox.BackColor = Color.White;
-		private void DirectorTextBox_Click(object sender, EventArgs e) => DirectorTextBox.BackColor = Color.White;
-		private void StudioTextBox_Click(object sender, EventArgs e) => StudioTextBox.BackColor = Color.White;
-		private void ActorsRichTextBox_Click(object sender, EventArgs e) => ActorsRichTextBox.BackColor = Color.White;
-		private void OverviewRichTextBox_Click(object sender, EventArgs e) => OverviewRichTextBox.BackColor = Color.White;
-
 		private void KeyDownHandler(object sender, KeyEventArgs e)
 		{
-			string helpMessage = "Для додавання рейтингу фільму використовуйте зірочки.\n" +
-						"Для завантаження фільму та постера перетягніть відповідні файли у відповідні області.\n" +
-						"Заповніть всі обов'язкові поля перед завантаженням.\n" +
-						"Натисніть кнопку 'Завантажити' для завершення процесу.";
+			if (e.KeyCode == Keys.F1)
+			{
+				ShowHelpWindow();
+			}
+		}
 
+		private void ShowHelpWindow()
+		{
+			string helpMessage = "Для додавання рейтингу фільму використовуйте зірочки.\n" +
+								 "Для завантаження фільму та постера перетягніть відповідні файли у відповідні області.\n" +
+								 "Заповніть всі обов'язкові поля перед завантаженням.\n" +
+								 "Натисніть кнопку 'Завантажити' для завершення процесу.";
 			MessageBox.Show(helpMessage, "Допомога - Завантаження фільму", MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+
+		private void ClearBackColor(object sender, EventArgs e)
+		{
+			if (sender is Control control)
+			{
+				control.BackColor = Color.White;
+			}
+		}
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				this.KeyDown -= KeyDownHandler;
+				foreach (Control control in Controls)
+				{
+					control.Dispose();
+				}
+			}
+			base.Dispose(disposing);
+		}
+
+		// Attach the event handler to the relevant controls in the form designer
+		private void AttachClearBackColorEventHandler()
+		{
+			TitleTextBox.Click += ClearBackColor;
+			DurationHours.Click += ClearBackColor;
+			DurationMinutes.Click += ClearBackColor;
+			GenreComboBox.Click += ClearBackColor;
+			DirectorTextBox.Click += ClearBackColor;
+			StudioTextBox.Click += ClearBackColor;
+			ActorsRichTextBox.Click += ClearBackColor;
+			OverviewRichTextBox.Click += ClearBackColor;
 		}
 	}
 }

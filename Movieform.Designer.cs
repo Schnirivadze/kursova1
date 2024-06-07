@@ -1,25 +1,13 @@
 ﻿namespace Kurs
 {
-	partial class Movieform
+	partial class MovieForm
 	{
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
+#pragma warning disable CS0414
 		private System.ComponentModel.IContainer components = null;
-
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
-
+#pragma warning restore CS0414
 		#region Windows Form Designer generated code
 
 		/// <summary>
@@ -28,7 +16,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movieform));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieForm));
 			this.ActorsLabel = new System.Windows.Forms.Label();
 			this.DurationLabel = new System.Windows.Forms.Label();
 			this.YearLabel = new System.Windows.Forms.Label();
@@ -250,8 +238,9 @@
 			this.Controls.Add(this.TitleLabel);
 			this.Controls.Add(this.PosterBox);
 			this.Name = "Movieform";
+			this.ShowIcon = false;
 			this.Text = "Movie";
-			this.Load += new System.EventHandler(this.Movieform_Load);
+			this.Load += new System.EventHandler(this.MovieForm_Load);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.PosterBox)).EndInit();
 			this.ResumeLayout(false);

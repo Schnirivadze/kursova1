@@ -1,25 +1,15 @@
-﻿namespace Kurs
+﻿using System.Windows.Forms;
+
+namespace Kurs
 {
 	partial class UploadForm
 	{
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
+#pragma warning disable CS0414
 		private System.ComponentModel.IContainer components = null;
-
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
-
+#pragma warning restore CS0414
 		#region Windows Form Designer generated code
 
 		/// <summary>
@@ -161,7 +151,6 @@
 			this.DirectorTextBox.Name = "DirectorTextBox";
 			this.DirectorTextBox.Size = new System.Drawing.Size(323, 27);
 			this.DirectorTextBox.TabIndex = 6;
-			this.DirectorTextBox.Click += new System.EventHandler(this.DirectorTextBox_Click);
 			this.DirectorTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// StudioTextBox
@@ -171,7 +160,6 @@
 			this.StudioTextBox.Name = "StudioTextBox";
 			this.StudioTextBox.Size = new System.Drawing.Size(323, 27);
 			this.StudioTextBox.TabIndex = 7;
-			this.StudioTextBox.Click += new System.EventHandler(this.StudioTextBox_Click);
 			this.StudioTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// DurationHours
@@ -181,7 +169,6 @@
 			this.DurationHours.Name = "DurationHours";
 			this.DurationHours.Size = new System.Drawing.Size(120, 27);
 			this.DurationHours.TabIndex = 2;
-			this.DurationHours.Click += new System.EventHandler(this.DurationHours_Click);
 			this.DurationHours.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// YearTextBox
@@ -247,7 +234,6 @@
 			this.GenreComboBox.Name = "GenreComboBox";
 			this.GenreComboBox.Size = new System.Drawing.Size(323, 28);
 			this.GenreComboBox.TabIndex = 5;
-			this.GenreComboBox.Click += new System.EventHandler(this.GenreComboBox_Click);
 			// 
 			// TitleTextBox
 			// 
@@ -259,7 +245,6 @@
 			this.TitleTextBox.Size = new System.Drawing.Size(705, 49);
 			this.TitleTextBox.TabIndex = 1;
 			this.TitleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.TitleTextBox.Click += new System.EventHandler(this.TitleTextBox_Click);
 			this.TitleTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// UploadButton
@@ -282,7 +267,6 @@
 			this.ActorsRichTextBox.Size = new System.Drawing.Size(323, 99);
 			this.ActorsRichTextBox.TabIndex = 8;
 			this.ActorsRichTextBox.Text = "";
-			this.ActorsRichTextBox.Click += new System.EventHandler(this.ActorsRichTextBox_Click);
 			this.ActorsRichTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// label10
@@ -307,7 +291,6 @@
 			this.DurationMinutes.Name = "DurationMinutes";
 			this.DurationMinutes.Size = new System.Drawing.Size(120, 27);
 			this.DurationMinutes.TabIndex = 3;
-			this.DurationMinutes.Click += new System.EventHandler(this.DurationMinutes_Click);
 			this.DurationMinutes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// starBox10
@@ -457,7 +440,6 @@
 			this.OverviewRichTextBox.Size = new System.Drawing.Size(676, 133);
 			this.OverviewRichTextBox.TabIndex = 9;
 			this.OverviewRichTextBox.Text = "";
-			this.OverviewRichTextBox.Click += new System.EventHandler(this.OverviewRichTextBox_Click);
 			this.OverviewRichTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownHandler);
 			// 
 			// UploadForm
